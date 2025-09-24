@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Profile from './Profile';
+import Profile from "./Profile";
 
 const Main = () => {
   return (

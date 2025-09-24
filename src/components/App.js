@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
-import Main from './Main'
-import { TranslationContext, translations } from '../contexts/translationContext';
+import "./App.css";
+import Main from "./Main";
+import {
+  TranslationContext,
+  translations,
+} from "../contexts/translationContext";
 
 function App() {
-  const [lang, setLang] = React.useState('en');
-  
+  const [lang, setLang] = React.useState("en");
+
   return (
     <div className="App">
       <TranslationContext.Provider value={translations[lang]}>
-				<Main />  
+        <Main />
       </TranslationContext.Provider>
     </div>
   );
